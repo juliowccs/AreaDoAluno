@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-image: url("src/imgs/the-jopwell-collection-tgANYv9U10Q-unsplash.jpg");
+    background-size: 100%;
+}
+.main {
+    margin: auto;
+    width: 40%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.form div {
+    margin: 1rem;
+}
+.form label {
+    position:relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.form input{
+    font-family: 'Poppins', sans-serif; 
+    width:100%;
+    padding: 3%;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+}
+.form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form input[type=number] {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+.form input::placeholder{
+    opacity:0;
+}
+.form span {
+    padding-left: 2%;
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateY(30px);
+    font-size:1.2rem;
+    transition-duration:300ms;
+}
+.form label:focus-within > span,
+input:not(:placeholder-shown) + span{
+    transform:translateY(1.2rem);
+    font-size: 80%;
+}
+#btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif; 
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.6);
+    font-size: 1.6rem;
+}
+.btn:hover {
+    background-color:rgb(0, 0, 0, 0.3)
+}
