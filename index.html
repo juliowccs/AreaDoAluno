@@ -7,15 +7,26 @@
         <link rel="stylesheet" href="style.css">
       </head>
       <body>
+        <header>
+            <img src="src/imgs/logoUnipe.png" alt="Logo da Unipê" id="unipe">
+            <div class="home">
+                <span><a href="https://www.unipe.edu.br/aluno/">Início</a></span>
+                <span><a href="https://www.unipe.edu.br/o-unipe/">Nossa História</a></span>
+                <span><a href="https://www.unipe.edu.br/sou-candidato/">Sou Candidato</a></span>
+                <span><a href="https://www.unipe.edu.br/biblioteca/">Biblioteca</a></span>
+            </div>
+        </header>
         <main class="main">
             <form class="form">
                 <label for="number">
                     <input type="number" id="user" placeholder="RGM ou CPF">
                     <span>Seu RGM ou CPF</span>
+                    <img src="src/imgs/input.png" alt="idcard" id="idcard">
                 </label>
                 <label for="password">
                     <input type="password" id="password" placeholder="Senha">
                     <span>Senha</span>
+                    <img src="src/imgs/password.png" alt="padlock" id="padlock">
                 </label>
                 <div id="btns">
                     <div class="">
@@ -26,8 +37,15 @@
                     </div>
                 </div>
             </form>
+            <div class="textbox">
+                <span id="welcome">Seja bem vindo!</span>
+                <span id="forgot"><a>Esqueceu ou deseja efetuar o reset da sua senha?</a></span>
+            </div>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <footer>
+            <span><a id="privacy" href="https://www.unipe.edu.br/politica-de-privacidade-e-termos-de-uso/">Política de Privacidade</a></span>
+            <img src="src/imgs/cruzeiroDoSul.png" alt="cruzeiroDoSul" id="cruzeiroDoSul">
+        </footer>
         <script src="src/js/script.js"></script>
       </body>
     </html>
