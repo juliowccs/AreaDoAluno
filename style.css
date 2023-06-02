@@ -21,11 +21,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-a {
-    color: rgb(255, 187, 0);
-    font-family: "Poppins";
-    text-decoration: none;
-}
 a, a:visited, a:hover, a:active {
     color: rgb(255, 187, 0);
     font-family: "Poppins";
@@ -41,8 +36,7 @@ a, a:visited, a:hover, a:active {
 .main {
     border-radius: 40px;
     background: #e0e0e0;
-    margin: auto;
-    height: 27rem;
+    height: 40rem;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 2%;
@@ -155,9 +149,12 @@ input:not(:placeholder-shown) + span{
     color:  rgb(255, 210, 86);
 }
 #cruzeiroDoSul {
-    margin-left: 70%;
+    margin-top: 4%;
+    margin-right: 3%;
     width: 20rem;
 }
 #privacy{
     color: rgb(255, 187, 0);
+    margin-top: 14%;
+    margin-left: 3%;
 }
