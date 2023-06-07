@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+aside {
+    margin-top: 20px;
+    margin-left: 12px;
+    grid-area: 1 / 1 / 2 / 3;
+}
+aside span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.main {
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    grid-area: 1 / 2 / 2 / 3;
+}
+#dashboard {
+    font-size: 20px;
+}
+#user {
+    width: 30px;
+}
+#homedashboard {
+    height: 30px;
+}
+#row {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+
+@media  (max-width: 1920px) {
+    .main {
+        height: 750px;
+        width: 1300px;
+        margin-left: 310px;
+        margin-right: 310px;
+    }
+}
+@media (max-width: 1366px) {
+    .main {
+        height: 600px;
+        width: 1200px;
+        margin-left: 183px;
+    }
+    #unipe {
+        width: 150px;
+        margin-right: 20px;
+    }
+    #dashboard {
+        margin-right: 630px;
+    }
+    #cruzeiroDoSul {
+        margin-top: 470px;
+        margin-left: 600px;
+        width: 250px;
+}
+    #user {
+        margin-right: 10px;
+    }
+}
+
+@media  (max-width: 1024px) {
+    .main {
+        height: 450px;
+        width: 800px;
+        margin-left: 112px;
+        margin-right: 112px;
+    }
+}

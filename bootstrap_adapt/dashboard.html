@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>testArea do Aluno</title>
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dashboard.css">
     </head>
     <body class="w-100">
         <nav class="navbar sticky-top navbar-expand-lg">
@@ -14,6 +14,7 @@
               <a class="navbar-brand">
                 <img src="src/imgs/logoUnipe.png" alt="Logo da Unipê" id="unipe">
               </a>
+              <span id="dashboard">Dashboard</span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,40 +33,41 @@
                             <a class="nav-link" href="#">Biblioteca</a>
                         </li>
                     </ul>
-              </div>
+                </div>
+                <span id="userbox">
+                    <img src="src/imgs/icon.png" alt="profile-picture" id="user">
+                </span>
             </div>
         </nav>
-        <main class="main">
-            <form class="form">
-                <label for="number">
-                    <input type="number" id="user" placeholder="RGM ou CPF">
-                    <span>Seu RGM ou CPF</span>
-                    <img src="src/imgs/input.png" alt="idcard" id="idcard">
-                </label>
-                <label for="password">
-                    <input type="password" id="password" placeholder="Senha">
-                    <span>Senha</span>
-                    <img src="src/imgs/password.png" alt="padlock" id="padlock">
-                </label>
-                <div id="btns">
-                    <div>
-                        <button class="btn" type="submit">Área do Aluno</button>
-                    </div>
-                    <div>
-                        <button class="btn" type="submit">Ambiente Virtual</button>
-                    </div>
-                </div>
-                <span id="forgot"><a>Esqueceu ou deseja efetuar o reset da sua senha?</a></span>
-            </form>
-
-            <div class="textbox">
-                <span id="welcome">Seja bem vindo!</span>
-                <span id="privacybox">
-                    <a id="privacy" href="https://www.unipe.edu.br/politica-de-privacidade-e-termos-de-uso/">Política de Privacidade</a>
+        <div id="row">
+            <aside>
+                <span>
+                    <img src="src/imgs/icon.png" alt="home" id="homedashboard">
+                    <p>Dashboard</p>
                 </span>
-                <img src="src/imgs/cruzeiroDoSul.png" alt="cruzeiroDoSul" id="cruzeiroDoSul">
-            </div>
-        </main>
+                <span>
+                    <img src="src/imgs/icon.png" alt="home" id="homedashboard">
+                    <p>Estudante</p>
+                </span>
+                <span>
+                    <img src="src/imgs/icon.png" alt="home" id="homedashboard">
+                    <p>Notas</p>
+                </span>
+                <span>
+                    <img src="src/imgs/icon.png" alt="home" id="homedashboard">
+                    <p>Faltas</p>
+                </span>
+            </aside>
+            <main class="main">
+                <div class="textbox">
+                    <span id="welcome">Seja bem vindo!</span>
+                    <span id="privacybox">
+                        <a id="privacy" href="https://www.unipe.edu.br/politica-de-privacidade-e-termos-de-uso/">Política de Privacidade</a>
+                    </span>
+                    <img src="src/imgs/cruzeiroDoSul.png" alt="cruzeiroDoSul" id="cruzeiroDoSul">
+                </div>
+            </main>
+        </div>
         <script src="src/js/script.js"></script>
     </body>
 </html>
