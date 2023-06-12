@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+
+body, html {
+    font-family: "Poppins";
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+aside {
+    margin-top: 20px;
+    margin-left: 12px;
+    grid-area: 1 / 1 / 2 / 3;
+}
+aside span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.main {
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#dashboard {
+    font-size: 20px;
+}
+#user {
+    width: 30px;
+}
+#homedashboard {
+    height: 30px;
+}
+#row {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+#welcome {
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 35px;
+    height: 200px;
+    width: 800px;
+    padding-top: 20px;
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#welcometext {
+    color: rgb(255, 187, 0);
+    font-weight: 700;
+    font-size: 46px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-left: 50px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+#students {
+    height: 172.6px;
+    width: 200px;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#graphic1 {
+    height: 240px;
+    border-radius: 35px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe; 
+    margin-top: -40px;
+    margin-left: 20px;
+    grid-area: 2 / 1 / 3 / 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#graphic2 {
+    height: 240px;
+    border-radius: 35px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe; 
+    margin-top: -40px;
+    margin-left: 20px;
+    grid-area: 2 / 2 / 3 / 3;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#progress {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#progresstext {
+    font-size: 30px;
+}
+#presence {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#presencetext {
+    font-size: 30px;
+}
+#extra {
+    width: 260px;
+    height: 480px;
+    border-radius: 35px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe;
+    margin-left: 20px;
+    grid-area: 1 / 3 / 3 / 4;
+}
+.progress-bar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, #e2e2e2 79%, transparent 80% 100%),
+      conic-gradient(#514A9D 75%, #24C6DC 0);    
+  }
+@media  (max-width: 1920px) {
+    .main {
+        height: 750px;
+        width: 1300px;
+        margin-left: 310px;
+        margin-right: 310px;
+    }
+}
+@media (max-width: 1366px) {
+    .main {
+        height: 600px;
+        width: 1200px;
+        margin-left: 183px;
+    }
+    #unipe {
+        width: 150px;
+        margin-right: 20px;
+    }
+    #dashboard {
+        margin-right: 520px;
+    }
+    #cruzeiroDoSul {
+        padding: 20px;
+        margin-top: 380px;
+        margin-left: 25px;
+        width: 200px;
+    }
+    #user {
+        margin-right: 10px;
+    }
+}
+
+@media  (max-width: 1024px) {
+    .main {
+        height: 450px;
+        width: 800px;
+        margin-left: 112px;
+        margin-right: 112px;
+    }
+}
