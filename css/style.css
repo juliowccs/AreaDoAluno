@@ -197,6 +197,9 @@ input:not(:placeholder-shown) + span{
     font-size: 30px;
     font-weight: 500;
 }
+#esquecibox {
+    color:  rgb(255, 210, 86);
+}
 #cruzeiroDoSul {
     margin-top: 4%;
     margin-right: 3%;
@@ -216,12 +219,75 @@ input:not(:placeholder-shown) + span{
 
 
 @media  (max-width: 1920px) {
+    .nav-link {
+        font-size: 25px;
+    }
     .main {
-        height: 750px;
-        width: 1300px;
-        margin-left: 310px;
+        height: 800px;
+        width: 1740px;
+        margin-left: 200px;
+    }
+    .form {
+        margin-top: 50px;
+    }
+    .form span {
+        font-size: 30px;
+    }
+    .form label {
+        font-size: 30px;
+    }
+    .form label:focus-within > span,
+    input:not(:placeholder-shown) + span{
+        transform:translateY(20px);
+        font-size: 70%;
+    }
+    .form input {
+        font-size: 30px;
+    }
+    .btn{
+        border-radius: 10px;
+        font-size: 30px;
+    }
+    #idcard {
+        margin-top: 35px;
+        margin-left: -90px;
+        width: 80px;
+        height: 80px;
+    }
+    #padlock {
+        margin-top: 35px;
+        margin-left: -80px;
+        width: 70px;
+        height: 70px;
+    }
+    #unipe {
+        width: 250px;
+        margin-right: 1000px;
+    }
+    #cruzeiroDoSul {
+        margin-top: 10px;
+        width: 400px;
+    }
+    #privacy {
+        font-size: 30px;
+        height: 20px;
+    }
+    #privacybox {
+        margin-left: 10px;
+        margin-top: 180px;
+    }
+    #welcome {
+        font-size: 80px;
+        margin-left: 120px;
+    }
+
+    #esqueci {
+        margin-left: 60px;
+        font-size: 30px;
+        font-weight: 400;
     }
 }
+
 @media (max-width: 1366px) {
     .main {
         height: 600px;
@@ -272,9 +338,6 @@ input:not(:placeholder-shown) + span{
     }
     #welcome {
         font-size: 40px;
-    }
-    #esquecibox {
-        color:  rgb(255, 210, 86);
     }
     #esqueci {
         font-size: 20px;
