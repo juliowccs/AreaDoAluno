@@ -1,5 +1,5 @@
 function opendashboard() {
-    window.open("https://juliowccs.github.io/AreaDoAluno/dashboard");
+    window.open("../dashboard.html");
 }
 
 var button = document.getElementById("areadoaluno");
