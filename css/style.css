@@ -261,7 +261,7 @@ input:not(:placeholder-shown) + span{
     }
     #unipe {
         width: 250px;
-        margin-right: 1000px;
+        margin-right: 900px;
     }
     #cruzeiroDoSul {
         margin-top: 10px;
