@@ -42,8 +42,8 @@
         <div id="row">
             <aside>
                 <span>
-                    <img src="src/imgs/homeh.png" alt="home" class="homedashboard">
-                    <a id="dashboardtext" href="dashboard.html">Dashboard</a>
+                    <img src="src/imgs/home.png" alt="home" class="homedashboard">
+                    <a href="dashboard.html">Dashboard</a>
                 </span>
                 <span>
                     <img src="src/imgs/user.png" alt="home" class="homedashboard">
@@ -62,29 +62,38 @@
                     <a href="cash.html">Financeiro</a>
                 </span>
                 <span>
-                    <img src="src/imgs/caa.png" alt="home" class="homedashboard">
-                    <a href="caa.html">CAA</a>
+                    <img src="src/imgs/caah.png" alt="home" class="homedashboard">
+                    <a id="dashboardtext" href="caa.html">CAA</a>
                 </span>
                 <div>
                     <img src="src/imgs/cruzeiroDoSul.png" alt="cruzeiroDoSul" id="cruzeiroDoSul">
                 </div>
             </aside>
             <main class="main">
-                <div id="welcome">
-                    <p id="welcometext">Boas vindas!</p>
-                    <img src="src/imgs/students.png" alt="students" id="students">
+                <div id="caaform">
+                    <form>
+                        <fieldset class="field">
+                        <legend style="font-size: 200%; padding-left: 0.6rem; padding-right: 0.6rem;" class="t">Central de Atendimento ao Aluno</legend>
+                        <label>Nome: </label>
+                        <input type="text" name="nome" required style="color: #339AF0; border-color: #339AF0;"> <br>
+                        <label>Email: </label>
+                        <input type="email" name="email" required style="color: #339AF0; border-color: #339AF0;"> <br>
+                        <label>Assunto: </label>
+                        <select name="assunto" style="color: #339AF0; border-color: #339AF0; ">
+                            <option value="sugestao" style="border-color: #339AF0;">Sugestão</option>
+                            <option value="critica" style="border-color: #339AF0;">Crítica</option>
+                            <option value="elogio" selected style="border-color: #339AF0;">Dúvida</option>
+                        </select> <br>
+                        <label>Mensagem: </label>
+                        <textarea name="mensagem" required style="color: #339AF0; border-color: #339AF0;"></textarea> <br>
+                        <section>
+                            <input type="checkbox" required>
+                            <label>Eu concordo com os Termos de Privacidade do Site</label> <br>
+                            <input type="submit" value="Enviar mensagem" required style="color: #339AF0; border-color: #339AF0;">
+                        </section>
+                        </fieldset>
+                    </form>
                 </div>
-                <div id="graphic1">
-                    <p id="progress">Progresso do Curso</p>
-                    <div id="progresstext" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
-                <div id="graphic2">
-                    <p id="presence">Presença no Curso</p>
-                    <div id="presencetext" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
-                <aside id="extra">
-                    <a class="twitter-timeline" data-width="420" data-height="740" href="https://twitter.com/UnipeOficial">Twitter</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </aside>
             </main>
         </div>
         <script src="src/js/script.js"></script>

@@ -9,6 +9,8 @@ body, html {
     height: 100%;
     overflow: hidden;
     background: #fff;
+    --bs-link-color-rgb: #969696;
+    --bs-link-hover-color-rgb: #969696;
 }
 aside {
     margin-top: 20px;
@@ -23,6 +25,7 @@ aside span {
     gap: 10px;
 }
 .main {
+    width: 2000px;
     border-radius: 35px;
     background-color: #e2e2e2;
     grid-area: 1 / 2 / 2 / 3;
@@ -140,6 +143,15 @@ aside span {
     font-weight: 700;
     color: #339AF0;
 }
+#unipe {
+    width: 200px;
+    margin-right: 20px;
+}
+#cruzeiroDoSul {
+    padding: 20px;
+    margin-top: 320px;
+    width: 200px;
+}
 .progress-bar {
     width: 150px;
     height: 150px;
@@ -173,12 +185,12 @@ aside span {
         margin-right: 20px;
     }
     #dashboard {
-        margin-right: 1000px;
+        margin-right: 960px;
         font-size: 30px;
     }
     #cruzeiroDoSul {
         padding: 20px;
-        margin-top: 320px;
+        margin-top: 400px;
         width: 200px;
     }
     #user {
@@ -228,12 +240,42 @@ aside span {
     #presencetext {
         font-size: 90px;
     }
+    input {
+        accent-color: #339AF0;
+    }
+    #caaform {
+        width: 640px;
+        margin-top: 150px;
+        margin-left: 530px;
+    }
+    .field {
+        scale: 1.4;
+        border-width: 1rem;
+        border-radius: 8px;
+        border-color: #f0ffff;
+        padding: 1rem;
+        font-size: 110%;
+        color: #339AF0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .field input, select, textarea {
+        border-radius: 8px;
+    }
     aside span {
         padding-top: 10px;
     }
-    aside span p {
+    aside span a {
         padding-top: 8px;
         font-size: 20px;
+        text-decoration: none;
+    }
+    aside span a:visited {
+        color: #969696;
     }
 }
 
