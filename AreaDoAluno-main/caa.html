@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+    </head>
+    <body class="w-100">
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="src/imgs/logoUnipe.png" alt="Logo da Unipê" id="unipe">
+              </a>
+              <span id="dashboard">Dashboard</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://www.unipe.edu.br/aluno/">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.unipe.edu.br/o-unipe/">Nossa História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.unipe.edu.br/sou-candidato/">Sou Candidato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.unipe.edu.br/biblioteca/">Biblioteca</a>
+                        </li>
+                    </ul>
+                </div>
+                <span id="userbox">
+                    <img src="src/imgs/userpicture.png" alt="profile-picture" id="user">
+                </span>
+            </div>
+        </nav>
+        <div id="row">
+            <aside>
+                <span>
+                    <img src="src/imgs/home.png" alt="home" class="homedashboard">
+                    <a href="dashboard.html">Dashboard</a>
+                </span>
+                <span>
+                    <img src="src/imgs/user.png" alt="home" class="homedashboard">
+                    <a href="student.html">Estudante</a>
+                </span>
+                <span>
+                    <img src="src/imgs/grades.png" alt="home" class="homedashboard">
+                    <a href="grades.html">Notas</a>
+                </span>
+                <span>
+                    <img src="src/imgs/faltas.png" alt="home" class="homedashboard">
+                    <a href="presence.html">Faltas</a>
+                </span>
+                <span>
+                    <img src="src/imgs/cash.png" alt="home" class="homedashboard">
+                    <a href="cash.html">Financeiro</a>
+                </span>
+                <span>
+                    <img src="src/imgs/caah.png" alt="home" class="homedashboard">
+                    <a id="dashboardtext" href="caa.html">CAA</a>
+                </span>
+                <div>
+                    <img src="src/imgs/cruzeiroDoSul.png" alt="cruzeiroDoSul" id="cruzeiroDoSul">
+                </div>
+            </aside>
+            <main class="main">
+                <div id="caaform">
+                    <form>
+                        <fieldset class="field">
+                        <legend style="font-size: 200%; padding-left: 0.6rem; padding-right: 0.6rem;" class="t">Central de Atendimento ao Aluno</legend>
+                        <label>Nome: </label>
+                        <input type="text" name="nome" required style="color: #339AF0; border-color: #339AF0;"> <br>
+                        <label>Email: </label>
+                        <input type="email" name="email" required style="color: #339AF0; border-color: #339AF0;"> <br>
+                        <label>Assunto: </label>
+                        <select name="assunto" style="color: #339AF0; border-color: #339AF0; ">
+                            <option value="sugestao" style="border-color: #339AF0;">Sugestão</option>
+                            <option value="critica" style="border-color: #339AF0;">Crítica</option>
+                            <option value="elogio" selected style="border-color: #339AF0;">Dúvida</option>
+                        </select> <br>
+                        <label>Mensagem: </label>
+                        <textarea name="mensagem" required style="color: #339AF0; border-color: #339AF0;"></textarea> <br>
+                        <section>
+                            <input type="checkbox" required>
+                            <label>Eu concordo com os Termos de Privacidade do Site</label> <br>
+                            <input type="submit" value="Enviar mensagem" required style="color: #339AF0; border-color: #339AF0;">
+                        </section>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="src/js/script.js"></script>
+    </body>
+</html>
