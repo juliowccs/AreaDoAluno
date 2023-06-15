@@ -113,8 +113,8 @@ aside span {
     font-weight: 700;
 }
 #finansup {
-    height: 200px;
-    width: 77%;
+    height: 600px;
+    width: 1200px;
     border-radius: 35px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe; 
@@ -141,7 +141,7 @@ aside span {
 
 #paypendencies {
     margin: 1px;
-    transform: translate(-55%, 15%);
+    transform: translate(-55%, -300%);
     border: 2px;
     border-radius: 10px;
     border-style: solid;
@@ -150,7 +150,7 @@ aside span {
 }
 
 .paymodels {
-    transform: translate(-97%, -100%);
+    transform: translate(-94%, -500%);
 }
 
 #graphic2 {
@@ -189,7 +189,7 @@ aside span {
     padding: 15px;
     font-weight: 500;
     font-size: 20px;
-    transform: translate(0%, -110%);
+    transform: translate(0%, -160%);
 }
 #progresstext {
     font-size: 30px;
@@ -331,9 +331,9 @@ aside span {
         margin-left: 20px;
     }
     #finansup {
-        height: 450px;
+        height: 650px;
         margin-top: -80px;
-        margin-left: 20px;
+        margin-left: 300px;
     }
     #graphic2 {
         height: 450px;
