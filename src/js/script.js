@@ -1,5 +1,5 @@
 function opendashboard() {
-    window.open("../dashboard.html");
+    window.open("dashboard.html");
 }
 
 var button = document.getElementById("areadoaluno");
