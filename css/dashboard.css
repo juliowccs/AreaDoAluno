@@ -35,6 +35,17 @@ aside span {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+.finanmain {
+    width: 2000px;
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
 .twitter {
     height: 300px;
@@ -101,6 +112,47 @@ aside span {
     flex-direction: column;
     font-weight: 700;
 }
+#finansup {
+    height: 200px;
+    width: 77%;
+    border-radius: 35px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe; 
+    transform: translate(0%, -25%);
+    margin-left: 100px;
+    grid-area: 2 / 1 / 2 / 4;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+#infoimg {
+    width: 30px;
+    transform: translate(-5%, -3%);
+}
+
+#infoblue {
+    color: #0c54d0;
+    margin-left: 1px;
+}
+
+#paypendencies {
+    margin: 1px;
+    transform: translate(-55%, 15%);
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #0c54d0;
+    padding: 10px;
+}
+
+.paymodels {
+    transform: translate(-97%, -100%);
+}
+
 #graphic2 {
     height: 240px;
     border-radius: 35px;
@@ -132,6 +184,12 @@ aside span {
     padding: 15px;
     font-weight: 500;
     font-size: 20px;
+}
+#financontent {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    transform: translate(0%, -110%);
 }
 #progresstext {
     font-size: 30px;
@@ -209,6 +267,10 @@ aside span {
         height: 860px;
         width: 1700px;
     }
+    .finanmain {
+        height: 860px;
+        width: 1700px;
+    }
     .twitter-timeline {
         padding: 20px;
         padding-left: 40px;
@@ -268,6 +330,11 @@ aside span {
         margin-top: -80px;
         margin-left: 20px;
     }
+    #finansup {
+        height: 450px;
+        margin-top: -80px;
+        margin-left: 20px;
+    }
     #graphic2 {
         height: 450px;
         margin-top: -80px;
@@ -282,6 +349,12 @@ aside span {
     }
     #progress {
         padding: 15px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    #financontent {
+        padding: 30px;
+        padding-left: 50px;
         font-weight: 500;
         font-size: 40px;
     }
@@ -333,10 +406,20 @@ aside span {
     aside span a:visited {
         color: #969696;
     }
+    .finanbox {
+        color: gray;
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 1366px) {
     .main {
+        height: 600px;
+        width: 1200px;
+        margin-left: 70px;
+    }
+    .finanmain {
         height: 600px;
         width: 1200px;
         margin-left: 70px;
@@ -361,6 +444,12 @@ aside span {
 
 @media  (max-width: 1024px) {
     .main {
+        height: 450px;
+        width: 800px;
+        margin-left: 112px;
+        margin-right: 112px;
+    }
+    .finanmain {
         height: 450px;
         width: 800px;
         margin-left: 112px;
